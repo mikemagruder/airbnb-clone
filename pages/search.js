@@ -4,6 +4,7 @@ import InfoCard from "../components/InfoCard";
 import { format } from "date-fns";
 // import dynamic from "next/dynamic";
 import Footer from "../components/Footer";
+import Map from '../components/Map'
 
 // Client Side Render as we need Global Window Object
 // const Map = dynamic(() => import("../components/Map"), {
@@ -61,9 +62,11 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        {/* <section className="hidden xl:inline-flex xl:min-w-[600px]">
-          <Map searchResults={searchResults} />
-        </section> */}
+        <section className="hidden lg:inline-flex lg:min-w-[600px]">
+          <Map 
+          searchResults={searchResults} 
+          />
+        </section>
       </main>
 
       <Footer />
